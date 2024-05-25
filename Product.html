@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Stationery Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Ez's Stationery Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="Main(home).html">Home</a></li>
+                <li><a href="Product.html">Products</a></li>
+                <li><a href="contactcoding.html">Contact</a></li>
+                <li><a href="Cart.html">Cart</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <main id="products">
+        <h2>Our Products</h2>
+        <div class="product-list">
+            <div class="product">
+                <h3>Notebook</h3>
+                <img src="Pictures/notebook.jpg" alt="notebook" style ="width:200px;height:200px;">
+                <p>RM3.00</p>
+                <label>
+                    Quantity:
+                    <select class="quantity-select" id="notebook-quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </label>
+                <button onclick="addToCart('Notebook', 3.00, 'notebook-quantity')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <h3>Pen</h3>
+                <img src="Pictures/pen.jpeg" alt="pen" style ="width:200px;height:200px;">
+                <p>RM1.50</p>
+                <label>
+                    Quantity:
+                    <select class="quantity-select" id="pen-quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </label>
+                <button onclick="addToCart('Pen', 1.50, 'pen-quantity')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <h3>Pencil</h3>
+                <img src="Pictures/pencil.jpg" alt="pencil" style ="width:200px;height:200px;">
+                <p>RM0.80</p>
+                <label>
+                    Quantity:
+                    <select class="quantity-select" id="pencil-quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </label>
+                <button onclick="addToCart('Pencil', 0.80, 'pencil-quantity')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <h3>Correction Tape</h3>
+                <img src="Pictures/correctiontape.jpeg" alt="correctiontape" style ="width:200px;height:200px;">
+                <p>RM3.80</p>
+                <label>
+                    Quantity:
+                    <select class="quantity-select" id="correctiontape-quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </label>
+                <button onclick="addToCart('Correction Tape', 3.80, 'correctiontape-quantity')">Add to Cart</button>
+            </div>
+        </div>
+    </main>
+    <div id="cart">
+        <h3>Your Stationery shopping Cart</h3>
+        <ul id="cartItems">
+        </ul>
+        <h3>Total Price: RM<span id="totalPrice">0.00</span></h3>
+    </div>
+
+
+    <script src="scripts.js"></script>
+</body>
+</html>

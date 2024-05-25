@@ -1,0 +1,234 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #0fdfdf;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    color: #000000;
+    margin: 0;
+    font-family:  cursive;
+    font-size: 2.5em;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #d4d4d4;
+}
+
+main {
+    padding: 2em;
+}
+
+main#home h3 {
+    text-align: center;
+    padding: 4em 2em;
+    margin : 70px;
+    background-image: url('Pictures/Alat\ tulis.jpg');
+}
+
+main#home h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 1em;
+    color: #070707;
+}
+
+main#home h3 {
+    font-family: fantasy;
+    font-size: 4em;
+    margin-bottom: 1em;
+    color: #0fdfdf;
+}
+
+main#home p {
+    text-align: left;
+    font-size: 20px;
+    color: #000000;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.product-list, .contact-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1em;
+}
+
+.product, .contact {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 1em;
+    padding: 1em;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product:hover, .contact:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.product h3, .contact h3 {
+    margin: .5em 0;
+    color: #000000;
+}
+
+.product img, .contact img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product p {
+    color: #888;
+}
+
+.product button {
+    background-color: #0fdfdf;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.product button:hover {
+    background-color: #0fdfdf;
+}
+
+main#contact {
+    background-color: #f1f1f1;
+    color: #333;
+    padding: 4em 2em;
+}
+
+main#contact h2 {
+    text-align: center;
+    margin-bottom: 1em;
+    color: #000000;
+}
+
+main#contact form {
+    margin-top: 20px;
+}
+
+main#contact label, main#contact input, main#contact textarea {
+    display: block;
+    margin: 0.5em 0;
+    width: 100%;
+    max-width: 600px;
+    margin: 0.5em auto;
+}
+
+main#contact input, main#contact textarea {
+    padding: 0.5em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#cart {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#cart ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#cart li {
+    padding: 0.5em 0;
+}
+
+#totalPrice {
+    font-weight: bold;
+}
+
+main#faq {
+    padding: 2em;
+    background-color: #fff;
+    max-width: 800px;
+    margin: 2em auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+main#faq h2 {
+    text-align: center;
+    margin-bottom: 1em;
+    color: #0fdfdf;
+}
+
+.faq-item {
+    margin-bottom: 1em;
+}
+
+.faq-item h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #0fdfdf;
+}
+
+.faq-item p {
+    margin: 0.5em 0 0;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+footer {
+    background-color: #0fdfdf;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    width: 100%;
+    bottom: 0;
+}
